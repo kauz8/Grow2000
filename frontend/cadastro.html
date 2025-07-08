@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grow2000 | Feed</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        :root {
+            --verde-militar: #556B2F;  /* Cor da boina */
+            --vermelho-queixa: #8B0000;  /* Cor da camisa */
+            --preto-poeira: #1A1A1A;
+        }
+        .bg-militar { background-color: var(--verde-militar) !important; }
+        .text-militar { color: var(--verde-militar) !important; }
+        .border-militar { border-color: var(--verde-militar) !important; }
+        .text-queixa { color: var(--vermelho-queixa) !important; }
+        .bg-preto-poeira { background-color: var(--preto-poeira) !important; }
+    </style>
+</head>
+
+<body class="bg-black text-light">
+    <!-- Navbar (igual ao sobre.html) -->
+    <nav class="navbar navbar-expand navbar-dark bg-black border-bottom border-militar">
+        <div class="container">
+            <a class="navbar-brand text-militar" href="index.html">
+                <i class="fas fa-seedling me-2"></i>Grow2000 
+            </a>
+            <div class="navbar-nav ms-auto">
+                <a class="nav-link active text-militar" href="index.html">Início</a>
+                <a class="nav-link text-militar" href="vendas.html">Vendas</a>
+                <a class="nav-link text-militar" href="sobre.html">Sobre</a>
+                <a class="nav-link text-queixa" href="cadastro.html">Cadastro</a>
+                <a class="nav-link text-militar" href="listagem.html">Listagem</a>
+                <a class="nav-link text-militar" href="contato.html">Contato</a>
+            </div>
+        </div>
+    </nav>
+
+      <!-- Formulário de Cadastro -->
+    <div class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card bg-dark border-militar">
+                    <div class="card-header bg-militar text-black">
+                        <h4 class="mb-0">
+                            <i class="fas fa-user-plus me-2"></i>CADASTRO UNDERGROUND
+                        </h4>
+                    </div>
+                    <!-- Formulário de Cadastro (parte crítica) -->
+                    <div class="card-body">
+                        <form id="formCadastro">
+                            <div class="mb-3">
+                                <label class="text-white" id="formCad">Nome Completo</label>
+                                <input type="text" class="form-control" id="nome" required>
+                            </div>
+                            <div class="mb-3">
+                                <label class="text-white" id="formCad">Email</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <!-- Adicione o campo password -->
+                            <div class="mb-3">
+                                <label class="text-white" id="formCad">Senha</label>
+                            <input type="password" class="form-control" id="password" required>
+                                </div>
+                            <div class="mb-3">
+                                <label class="text-white" id="formCad">CEP</label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" id="cep" maxlength="8" required>
+                                    <button type="button" class="btn btn-primary" onclick="buscarCep(cep.value)">
+                                        <i class="fas fa-search"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label class ="text-white" id="formCad">Rua</label>
+                                <input type="text" class="form-control" id="rua" readonly>
+                            </div>
+                            <div class="mb-3">
+                                <label class ="text-white" id="formCad">Bairro</label>
+                                <input type="text" class="form-control" id="bairro" readonly>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-8 mb-3">
+                                    <label class ="text-white" id="formCad">Cidade</label>
+                                    <input type="text" class="form-control" id="cidade" readonly>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <label class ="text-white" id="formCad">Estado</label>
+                                    <input type="text" class="form-control" id="estado" readonly>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-success">Cadastrar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="py-3 bg-black border-top border-militar text-center text-white-50 small">
+        © 2025 Grow2000 | Underground SP
+    </footer>
+
+    <script src="js/main.js"></script> 
+</body>
+</html>

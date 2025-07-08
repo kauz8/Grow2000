@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre | Grow2000</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Cores personalizadas (ajuste conforme suas roupas) */
+        :root {
+            --verde-militar: #556B2F;
+            --vermelho-sangue: #8B0000;
+            --preto-poeira: #1A1A1A;
+        }
+        .bg-militar { background-color: var(--verde-militar) !important; }
+        .text-militar { color: var(--verde-militar) !important; }
+        .border-militar { border-color: var(--verde-militar) !important; }
+        .text-sangue { color: var(--vermelho-sangue) !important; }
+    </style>
+</head>
+
+<body class="bg-black text-light">
+    <!-- Navbar (igual ao index) -->
+    <nav class="navbar navbar-expand navbar-dark bg-black border-bottom border-militar">
+        <div class="container">
+            <a class="navbar-brand text-militar" href="index.html">
+                <i class="fas fa-seedling me-2"></i>Grow2000
+            </a>
+            <div class="navbar-nav ms-auto">
+                <a class="nav-link text-militar" href="index.html">Início</a>
+                <a class="nav-link text-militar" href="vendas.html">Vendas</a>
+                <a class="nav-link active text-sangue" href="sobre.html">Sobre</a>
+                <a class="nav-link text-militar" href="cadastro.html">Cadastro</a>
+                <a class="nav-link text-militar" href="listagem.html">Listagem</a>
+                <a class="nav-link text-militar" href="contato.html">Contato</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Cabeçalho Estilizado -->
+    <div class="container-fluid bg-militar py-5 text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold text-black">
+                <i class="fas fa-user-ninja"></i> KAUZ
+            </h1>
+            <p class="lead text-black mb-0">Artista Underground | Produtor | Criador da Grow2000</p>
+        </div>
+    </div>
+
+    <!-- Conteúdo Sobre -->
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-md-6">
+                <!-- Foto sua (substitua pelo seu caminho) -->
+                <img src="img/mua.jpg" class="img-fluid rounded border border-militar shadow-lg" alt="Kauz" style="filter: grayscale(20%) contrast(120%);">
+            </div>
+            <div class="col-md-6">
+                <h2 class="text-militar mb-4">
+                    <i class="fas fa-scroll me-2"></i>Minha História
+                </h2>
+                <p class="text-white-50">
+                    Salve! Sou Kauz, artista multifacetado da Zona Oeste de SP. Comecei na cena underground em 2018, 
+                    batendo ponto nos becos com um microfone e um sonho. Hoje, além de rimar, produzo beats, faço vídeos 
+                    e clipes, e cuido da <span class="text-sangue">Grow2000</span> – meu selo pra dar voz à quebrada.
+                </p>
+                <p class="text-white-50 mt-3">
+                    Minha arte é espelho da rua: <span class="text-militar">crueza</span>, <span class="text-militar">verdade</span> e 
+                    <span class="text-militar">resistência</span>. Uso a boina como coroa e a camisa como armadura – 
+                    cada verso é um protesto, cada beat é um levante.
+                </p>
+                <div class="mt-4">
+                    <h5 class="text-sangue">
+                        <i class="fas fa-fist-raised me-2"></i>Manifesto:
+                    </h5>
+                    <blockquote class="blockquote text-white-50 border-start border-militar ps-3">
+                        "Não vendo imagem, vivo o que canto. Não sigo moda, faço caminho."
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+
+        <!-- Marcadores de Carreira -->
+        <div class="row mt-5 text-center">
+            <div class="col-md-4 mb-4">
+                <div class="card bg-preto-poeira border-militar h-100">
+                    <div class="card-body">
+                        <i class="fas fa-microphone-alt text-sangue fa-3x mb-3"></i>
+                        <h5 class="text-militar">+50 Músicas</h5>
+                        <p class="text-white-50 small">Lançadas entre 2018-2024</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card bg-preto-poeira border-militar h-100">
+                    <div class="card-body">
+                        <i class="fas fa-video text-sangue fa-3x mb-3"></i>
+                        <h5 class="text-militar">+20 Clipes</h5>
+                        <p class="text-white-50 small">Dirigidos e editados por mim</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="py-3 bg-black border-top border-militar text-center text-white-50 small">
+        © 2025 Grow2000 | <span class="text-sangue">"Do gueto para o mundo"</span>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

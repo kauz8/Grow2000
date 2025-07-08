@@ -1,0 +1,56 @@
+
+
+h1 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.container {
+  padding-bottom: 40px;
+}
+/* Efeitos para a página Sobre */
+.bg-preto-poeira {
+    background-color: #1A1A1A !important;
+}
+
+.blockquote {
+    font-family: 'Courier New', monospace;
+}
+
+.img-fluid {
+    transition: transform 0.3s;
+}
+.img-fluid:hover {
+    transform: scale(1.02);
+}
+
+/* Responsividade para a foto */
+@media (max-width: 768px) {
+    .img-fluid {
+        margin-bottom: 30px;
+    }
+}
+
+/* Efeito hover nos cards */
+.hover-glow:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(85, 107, 47, 0.3);
+    transition: all 0.3s;
+}
+
+/* Customização do player de áudio */
+audio {
+    border-radius: 0;
+    background-color: #ed0f0f;
+}
+
+/* Badges */
+.badge {
+    font-family: 'Courier New', monospace;
+    letter-spacing: 1px;
+}
+/* Links de contato */
+a.text-light:hover {
+    color: #8B0000 !important; /* Vermelho da camisa */
+    text-decoration: none;
+}
